@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 25%;
+            padding-right: 10%;
+            font-size: 120%;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between; 
+            position: sticky;
+            top: 0;
+            background-color: white;
+        } 
+        .img1{
+            height:70vh ;
+            width: 100vw;
+            
+        }
+        .first{
+            position: relative;
+        }
+        .text{
+            position: absolute;
+            font-size: 220%;
+            bottom: 20px;
+            left: 20px;
+        }
+        .img2{
+            width: 30vw;
+            height: 60vh;
+        }
+        .img3{
+            width: 30vw;
+            height: 80vh;
+        }
+        .second{
+            
+           line-height: 140%;
+            display: flex;
+            /* font-size: 100%; */
+            /* justify-content: center; */
+            gap: 5%;
+           margin-left: 20%;
+           margin-right: 20%;
+
+        }
+        .about{
+            font-size: 220%; 
+        }
+        .tradition{
+            font-size: 150%;
+        }
+        .bread{
+            letter-spacing: 0.5vw;
+        }
+        .third{
+            display: flex;
+            margin-left: 20%;
+           margin-right: 20%;
+        }
+        .fourth{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .gourmet{
+            font-size: 150%;
+        }
+        .service{
+            color: teal;
+            font-size: 150%;
+        }
+        input{
+            width: 60vw;
+        height: 5vh;
+        font-size: 20px;
+       
+        
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+       @media only screen and (width<900px){
+        
+         .second{
+            display: block;
+         }
+         .img2{
+            width: 45vw;
+         }
+         .third{
+            display: block;
+         }
+         .img3{
+            width:50vw;
+            height: 60vh;
+         }
+        
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <h3 class="gourmet"><a href="#catering">Gourmet au catering</a></h3>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <article>
+        <div class="first" id="catering">
+            <img src="https://www.w3schools.com/w3images/hamburger.jpg"  class="img1">
+            <div class="text">Le Catering</div>
+        </div>
+        <br><br><br>
+        <div class="second"  id="about">
+            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" class="img2" >
+            <div>
+                <p class="about">About Catering</p>
+                <p class="tradition">Tradition since 1889</p>
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                <p class="para2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </article>
+    <br><br>
+    <br>
+    <br>
+    <br><article id="menu">
+        <div class="third">
+            <div>
+    <h2 align="center" class="menu">Our Menu</h2>
+    <p class="bread">Bread Basket</p>
+    <p>Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    <p class="bread">Honey Almond Granola with Fruits</p>
+    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    <p class="bread">Belgian Waffle</p>
+    <p>Vanilla flavored batter with malted flour 7.50</p><br>
+    
+    <p class="bread">Scrambled eggs</p>
+    <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    <p class="bread">Blueberry Pancake</p>
+    <p>With syrup, butter and lots of berries 8.50</p><br>
+
+</div>
+    <img src="https://www.w3schools.com/w3images/tablesetting.jpg" class="img3">
+</div>
+</article>
+<br><br>
+<article id="contact"><div class="fourth">
+    <h2>Contact</h2>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="service">Catering Service, 42nd Living St, 43043 New York, NY</p>
+    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here</p>
+    <input type="text" placeholder="Name"><br><br>
+    <input type="text" placeholder="How Many People"><br><br>
+    <input type="date" placeholder="Date"><br><br>
+    <input type="text" placeholder="Message/special  request"><br><br>
+    <button>send message</button>
+    
+</div>
+</article>
+</body>
+</html>

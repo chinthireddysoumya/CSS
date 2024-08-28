@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 40vw;
+            height: 60vh;
+            background-color: aqua;   
+        }
+        .img1{
+            transition: all;
+            transition-duration: 3s;
+        }
+      
+       .rotate:hover~.img1 {
+            
+            transform: rotate(360deg);
+          
+        }
+        .translate:hover~.img1{
+            transform:translate(100px,100px);
+        }
+        .scale:hover~.img1{
+            transform:scale(1.5);
+        }
+        .skew:hover~.img1{
+            transform:skew(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="translate"> translate</button>
+        <button class="rotate">rotate</button>
+        <button class="scale">scale</button>
+        <button class ="skew">skew</button>
+        <br><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0eZYppBKvwFY3MpIdzMyHzQjEU2WFi20hhm_YOFLGkX_VP-RoP6Q_rAe2vbK6tNPT58&usqp=CAU" class="img1">
+    </div>
+</body>
+</html>
